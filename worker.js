@@ -1,5 +1,5 @@
 import { connect } from 'cloudflare:sockets';
-const passwd='passwd value';
+const passwd='';
 export default{async fetch(request){
   const upgradeHeader=request.headers.get("Upgrade");
   if(upgradeHeader!=="websocket") return new Response(null, {status:404});
