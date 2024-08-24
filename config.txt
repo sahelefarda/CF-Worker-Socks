@@ -1,0 +1,1 @@
+{"domain":"a.com","psw":"passwd value","sport":1080,"sbind":"127.0.0.1","wkip":"","byip":"","cfhs":["ipip.net",""]}
