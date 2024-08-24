@@ -1,1 +1,1 @@
-{"domain":"freedom.pages.dev","psw":"","sport":1080,"sbind":"127.0.0.1","wkip":"","byip":"","cfhs":["ipip.net",""]}
+{"domain":"freedom.medsh.eu.org","psw":"","sport":1080,"sbind":"127.0.0.1","wkip":"","byip":"","cfhs":["ipip.net",""]}
