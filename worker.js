@@ -1,5 +1,5 @@
 import { connect } from 'cloudflare:sockets';
-const passwd='a';
+
 export default{async fetch(request){
   const upgradeHeader=request.headers.get("Upgrade");
   if(upgradeHeader!=="websocket") return new Response(null, {status:404});
@@ -7,8 +7,8 @@ export default{async fetch(request){
   server.accept();
   server.addEventListener('message',({data})=>{
     try{
-      const {hostname,port,psw}=JSON.parse(data);
-      if(passwd!=psw) throw 'Illegal-User';
+      const {hostname,port}=JSON.parse(data);
+     
       const socket=connect({hostname,port});
       new ReadableStream({
         start(controller){
